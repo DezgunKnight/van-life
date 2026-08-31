@@ -1,0 +1,64 @@
+.van-detail-container {
+    padding: 24px;
+}
+
+.van-detail-container .back-button {
+    color: #161616;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.van-detail-container .back-button:hover {
+    text-decoration: underline;
+}
+
+.van-detail {
+    display: flex;
+    flex-direction: column;
+    color: #161616;
+}
+
+.van-detail img {
+    border-radius: 5px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.van-detail h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.van-detail .van-price {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.van-detail .van-price span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.van-detail p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.van-detail .link-button {
+    margin-top: 10px;
+    background-color: #FF8C38;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.van-type {
+    align-self: flex-start;
+}
