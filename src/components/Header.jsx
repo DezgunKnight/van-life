@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function Navbar() {
+export function Header() {
   return (
     <header>
       <Link to="/"  className="site-logo">

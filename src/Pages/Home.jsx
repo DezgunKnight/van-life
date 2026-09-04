@@ -13,7 +13,6 @@ export function Home() {
         <Link to="/vans" className="home-btn">Find your van</Link>
       </main>
 
-      <footer>&#169; 2026 #VANLIFE</footer>
     </div>
   )
 }
