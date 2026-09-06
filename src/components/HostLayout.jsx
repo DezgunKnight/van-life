@@ -5,9 +5,9 @@ export function HostLayout() {
   return (
       <>
         <nav className="host-nav">
-          <Link to="/host/dashboard">Dashboard</Link>
-          <Link to="/host/income">Income</Link>
-          <Link to="/host/reviews">Reviews</Link>
+          <Link to="/host">Dashboard</Link>
+          <Link to="income">Income</Link>
+          <Link to="reviews">Reviews</Link>
         </nav>
         <Outlet />
       </>

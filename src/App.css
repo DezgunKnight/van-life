@@ -236,4 +236,22 @@ footer {
   font-size: 14px;
 }
 
+/* HostLayout Navigation */
 
+.host-nav {
+  display: flex;
+  gap: 50px;
+  padding: 20px 26px;
+}
+
+.host-nav a {
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.host-nav a:hover {
+  color: #161616;
+  text-decoration: underline;
+}
