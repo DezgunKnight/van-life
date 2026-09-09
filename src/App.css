@@ -38,9 +38,14 @@ header nav a:hover {
    ========================= */
 
 .site-wrapper {
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.site-wrapper > main,
+.site-wrapper > :nth-child(2) {
+  flex: 1;
 }
 
 .home-container {
@@ -114,19 +119,6 @@ header nav a:hover {
 }
 
 
-/* =========================
-   ABOUT PAGE
-   ========================= */
-
-.about-page {
-  min-height: calc(100vh - 80px);
-
-  background-color: #fff7ed;
-  color: #161616;
-
-  display: flex;
-  flex-direction: column;
-}
 
 
 /* =========================
@@ -135,7 +127,8 @@ header nav a:hover {
 
 .about-page {
   background-color: #fffbdf;
-  min-height: 100vh;
+  color: #161616;
+  flex: 1; /* Fills empty vertical space inside site-wrapper */
   display: flex;
   flex-direction: column;
 }
@@ -254,4 +247,10 @@ footer {
 .host-nav a:hover {
   color: #161616;
   text-decoration: underline;
+}
+
+.host-nav a.my-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #161616;
 }
