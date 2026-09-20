@@ -32,7 +32,12 @@ export function HostVanDetail() {
 
 return (
 <div className="van-detail-container">
-<Link to="/host/vans" className="back-button">&larr; <span>Back to host vans list</span></Link>
+<Link 
+    to=".." 
+    relative="path"
+    className="back-button"
+    
+    >&larr; <span>Back to host vans list</span></Link>
 
 {van ? (
     <div className="van-detail">
@@ -65,7 +70,7 @@ return (
     </NavLink>
     </nav>
 
-    <Outlet />
+    <Outlet context={{ van }} />
     </div>
     ) : <h2>Loading...</h2>}
     </div>

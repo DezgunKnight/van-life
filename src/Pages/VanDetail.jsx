@@ -16,7 +16,12 @@ export function VanDetail() {
 
   return (
     <div className="van-detail-container">
-      <Link to="/vans" className="back-button">&larr; <span>Back to all vans</span></Link>
+      <Link 
+        to=".." 
+        relative="path"
+        className="back-button"
+        
+        >&larr; <span>Back to all vans</span></Link>
       
       {van ? (
         <div className="van-detail">
