@@ -13,6 +13,8 @@ export function Vans() {
 
   const [vans, setVans] = useState([])
 
+  const displayedVans = typeFilter ? vans.filter(van => van.type.toLowerCase() === typeFilter.toLowerCase()) : vans
+
 
   useEffect(() => {
     fetch("/api/vans")
@@ -20,7 +22,7 @@ export function Vans() {
     .then(data => setVans(data.vans))
   }, [])
 
-  const vanElements = vans.map(van => (
+  const vanElements = displayedVans.map(van => (
             <div key={van.id} className="van-tile">
               <Link 
                 to={`/vans/${van.id}`} 
