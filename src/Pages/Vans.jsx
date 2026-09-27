@@ -83,34 +83,34 @@ export function Vans() {
       <main className="page-wrapper">
         <h1>Explore our van options</h1>
         
-        <div style={filterStyles.container}>
-  <Link 
-    to="?type=simple" 
-    style={typeFilter === "simple" ? filterStyles.selectedButton : filterStyles.button}
-  >
-    Simple
-  </Link>
-  
-  <Link 
-    to="?type=rugged" 
-    style={typeFilter === "rugged" ? filterStyles.selectedButton : filterStyles.button}
-  >
-    Rugged
-  </Link>
+      <div style={filterStyles.container}>
+        <Link 
+          to="?type=simple" 
+          style={typeFilter === "simple" ? filterStyles.selectedButton : filterStyles.button}
+        >
+          Simple
+        </Link>
+        
+        <Link 
+          to="?type=rugged" 
+          style={typeFilter === "rugged" ? filterStyles.selectedButton : filterStyles.button}
+        >
+          Rugged
+        </Link>
 
-  <Link 
-    to="?type=luxury" 
-    style={typeFilter === "luxury" ? filterStyles.selectedButton : filterStyles.button}
-  >
-    Luxury
-  </Link>
+        <Link 
+          to="?type=luxury" 
+          style={typeFilter === "luxury" ? filterStyles.selectedButton : filterStyles.button}
+        >
+          Luxury
+        </Link>
 
-  {typeFilter && (
-    <Link to="." style={filterStyles.clearLink}>
-      Clear filter
-    </Link>
-  )}
-</div>
+        {typeFilter && (
+          <Link to="." style={filterStyles.clearLink}>
+            Clear filter
+          </Link>
+        )}
+      </div>
         
         <div className="van-list-container">
           {vanElements}
