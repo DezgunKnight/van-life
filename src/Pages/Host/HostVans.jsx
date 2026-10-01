@@ -58,7 +58,7 @@ const hostVanElements = vans.map(van => (
       key={van.id} 
       style={styles.container}>
       <Link 
-          to={`/host/vans/${van.id}`} 
+          to={van.id} 
           style={styles.link}>
         <img 
           src={van.imageUrl} 
