@@ -70,6 +70,7 @@ export function Vans() {
             <div key={van.id} className="van-tile">
               <Link 
                 to={van.id} 
+                state={{search: searchParams.toString()}}
                 className="van-tile-link">
                 <img src={van.imageUrl} alt="Van Image"/>
                 <div className="van-info">
