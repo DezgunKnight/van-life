@@ -69,7 +69,7 @@ export function Vans() {
   const vanElements = displayedVans.map(van => (
             <div key={van.id} className="van-tile">
               <Link 
-                to={van.id} 
+                to={`${van.id}${location.search}`} 
                 state={{search: searchParams.toString()}}
                 className="van-tile-link">
                 <img src={van.imageUrl} alt="Van Image"/>
